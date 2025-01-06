@@ -1,0 +1,144 @@
+
+An unexpected exception has been detected in native code outside the VM.
+Unexpected Signal : EXCEPTION_ACCESS_VIOLATION (0xc0000005) occurred at PC=0x57172DB
+Function=Java_sun_awt_windows_WObjectPeer_initIDs+0x95
+Library=C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\awt.dll
+
+Current Java thread:
+	at sun.awt.windows.Win32SurfaceData.invalidateSD(Native Method)
+	at sun.awt.windows.Win32SurfaceData.invalidate(Unknown Source)
+	at sun.awt.windows.WComponentPeer.replaceSurfaceData(Unknown Source)
+	- locked <0x105f0df0> (a sun.awt.windows.WFramePeer)
+	- locked <0x105206d0> (a java.awt.Component$AWTTreeLock)
+	at sun.awt.windows.WComponentPeer.displayChanged(Unknown Source)
+	at sun.awt.windows.WCanvasPeer.displayChanged(Unknown Source)
+	at sun.awt.windows.WPanelPeer.displayChanged(Unknown Source)
+	at sun.awt.windows.WWindowPeer.displayChanged(Unknown Source)
+	at sun.awt.SunDisplayChanger.notifyListeners(Unknown Source)
+	at sun.awt.Win32GraphicsDevice.displayChanged(Unknown Source)
+	at sun.awt.Win32GraphicsEnvironment.displayChanged(Unknown Source)
+	at sun.awt.windows.WToolkit$4.run(Unknown Source)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+Dynamic libraries:
+0x00400000 - 0x00437000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\Bin\javasup.exe
+0x77B00000 - 0x77CB1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x76E80000 - 0x76F70000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x77080000 - 0x772F4000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x70630000 - 0x706D6000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x6E650000 - 0x6E8B2000 	C:\WINDOWS\SYSTEM32\AcGenral.DLL
+0x76B00000 - 0x76BC4000 	C:\WINDOWS\System32\msvcrt.dll
+0x77420000 - 0x774A5000 	C:\WINDOWS\System32\sechost.dll
+0x76FA0000 - 0x76FBA000 	C:\WINDOWS\System32\bcrypt.dll
+0x75D00000 - 0x75D4B000 	C:\WINDOWS\System32\SHLWAPI.dll
+0x76950000 - 0x76AF8000 	C:\WINDOWS\System32\USER32.dll
+0x75F40000 - 0x75F5A000 	C:\WINDOWS\System32\win32u.dll
+0x75F60000 - 0x75F83000 	C:\WINDOWS\System32\GDI32.dll
+0x77700000 - 0x777E2000 	C:\WINDOWS\System32\gdi32full.dll
+0x77310000 - 0x77389000 	C:\WINDOWS\System32\msvcp_win.dll
+0x75E20000 - 0x75F32000 	C:\WINDOWS\System32\ucrtbase.dll
+0x75BB0000 - 0x75D00000 	C:\WINDOWS\System32\ole32.dll
+0x77810000 - 0x77A8D000 	C:\WINDOWS\System32\combase.dll
+0x76FC0000 - 0x7707A000 	C:\WINDOWS\System32\RPCRT4.dll
+0x77520000 - 0x775BC000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x77680000 - 0x776FF000 	C:\WINDOWS\System32\advapi32.dll
+0x76C30000 - 0x76CF1000 	C:\WINDOWS\System32\shcore.dll
+0x75F90000 - 0x76628000 	C:\WINDOWS\System32\SHELL32.dll
+0x70980000 - 0x709FF000 	C:\WINDOWS\SYSTEM32\UxTheme.dll
+0x70920000 - 0x70951000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x70880000 - 0x70896000 	C:\WINDOWS\SYSTEM32\samcli.dll
+0x707A0000 - 0x707B9000 	C:\WINDOWS\SYSTEM32\MSACM32.dll
+0x74CB0000 - 0x74CB8000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x71170000 - 0x71194000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x70840000 - 0x70864000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x70080000 - 0x70222000 	C:\WINDOWS\SYSTEM32\urlmon.dll
+0x707C0000 - 0x7083F000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x75530000 - 0x75559000 	C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x70610000 - 0x70629000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x703D0000 - 0x703F6000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x6FD10000 - 0x6FF48000 	C:\WINDOWS\SYSTEM32\iertutil.dll
+0x6FFD0000 - 0x6FFED000 	C:\WINDOWS\SYSTEM32\srvcli.dll
+0x6FF50000 - 0x6FF5B000 	C:\WINDOWS\SYSTEM32\netutils.dll
+0x76F70000 - 0x76F95000 	C:\WINDOWS\System32\IMM32.DLL
+0x775C0000 - 0x77672000 	C:\WINDOWS\System32\comdlg32.dll
+0x10000000 - 0x10029000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\Bin\jsdll.dll
+0x70540000 - 0x705D1000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.22621.2506_none_fbe8e1f07808be9b\COMCTL32.dll
+0x08000000 - 0x08136000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\client\jvm.dll
+0x023B0000 - 0x023B7000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\hpi.dll
+0x024A0000 - 0x024AE000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\verify.dll
+0x024B0000 - 0x024C8000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\java.dll
+0x026E0000 - 0x026ED000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\zip.dll
+0x04CD0000 - 0x04CEC000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\jdwp.dll
+0x04CF0000 - 0x04CF6000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\dt_shmem.dll
+0x05690000 - 0x0579F000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\awt.dll
+0x057B0000 - 0x05800000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\fontmanager.dll
+0x70450000 - 0x7053B000 	C:\WINDOWS\SYSTEM32\ddraw.dll
+0x6F390000 - 0x6F45A000 	C:\WINDOWS\SYSTEM32\dxgi.dll
+0x70720000 - 0x70727000 	C:\WINDOWS\SYSTEM32\DCIMAN32.dll
+0x706F0000 - 0x7071D000 	C:\WINDOWS\SYSTEM32\dxcore.dll
+0x6F590000 - 0x6F6CC000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e6980897e3126266\igdumdim32.dll
+0x55D20000 - 0x5982C000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e6980897e3126266\igd9dxva32.dll
+0x75770000 - 0x75BAD000 	C:\WINDOWS\System32\SETUPAPI.dll
+0x75690000 - 0x756CD000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x67A20000 - 0x67C85000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e6980897e3126266\igdgmm32.dll
+0x6A2E0000 - 0x6A2FE000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e6980897e3126266\igdinfo32.dll
+0x72F00000 - 0x72F15000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x72ED0000 - 0x72F00000 	C:\WINDOWS\system32\rsaenh.dll
+0x72EC0000 - 0x72ECB000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x774B0000 - 0x77512000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x65310000 - 0x67A1A000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e6980897e3126266\igc32.dll
+0x6EE90000 - 0x6EEF5000 	C:\WINDOWS\SYSTEM32\D3DIM700.DLL
+0x6EDF0000 - 0x6EE84000 	C:\WINDOWS\System32\DriverStore\FileRepository\nvlti.inf_amd64_9a2c79b60d6607c6\nvldumd.dll
+0x744E0000 - 0x744EE000 	C:\WINDOWS\SYSTEM32\msasn1.dll
+0x6FFA0000 - 0x6FFC7000 	C:\WINDOWS\SYSTEM32\cryptnet.dll
+0x767D0000 - 0x768D3000 	C:\WINDOWS\System32\CRYPT32.dll
+0x6EB90000 - 0x6EC99000 	C:\WINDOWS\SYSTEM32\drvstore.dll
+0x70E90000 - 0x70EB4000 	C:\WINDOWS\SYSTEM32\devobj.dll
+0x6FBF0000 - 0x6FC34000 	C:\WINDOWS\SYSTEM32\wldp.dll
+0x77A90000 - 0x77AE8000 	C:\WINDOWS\System32\wintrust.dll
+0x777F0000 - 0x7780B000 	C:\WINDOWS\System32\imagehlp.dll
+0x541D0000 - 0x55D1E000 	C:\WINDOWS\System32\DriverStore\FileRepository\nvlti.inf_amd64_9a2c79b60d6607c6\nvgpucomp32.dll
+0x51A50000 - 0x541C8000 	C:\WINDOWS\System32\DriverStore\FileRepository\nvlti.inf_amd64_9a2c79b60d6607c6\nvd3dum.dll
+0x74E40000 - 0x7552C000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x74CE0000 - 0x74DA7000 	C:\WINDOWS\SYSTEM32\wintypes.dll
+0x5CBC0000 - 0x5CDEA000 	C:\WINDOWS\system32\nvspcap.dll
+0x72480000 - 0x7249D000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x6FF70000 - 0x6FF91000 	C:\WINDOWS\SYSTEM32\gpapi.dll
+0x76630000 - 0x7672C000 	C:\WINDOWS\System32\MSCTF.dll
+0x74CC0000 - 0x74CD3000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x6B030000 - 0x6B129000 	C:\WINDOWS\SYSTEM32\textinputframework.dll
+0x6C010000 - 0x6C0DE000 	C:\WINDOWS\SYSTEM32\CoreMessaging.dll
+0x60B00000 - 0x60D91000 	C:\WINDOWS\SYSTEM32\CoreUIComponents.dll
+0x1C9F0000 - 0x1CA0E000 	C:\Users\azimv\OneDrive\Documents\RTP A\Ready to Program\Support\jre142_01\bin\jpeg.dll
+0x77390000 - 0x77412000 	C:\WINDOWS\System32\clbcatq.dll
+0x6A8C0000 - 0x6A90C000 	C:\WINDOWS\system32\dataexchange.dll
+0x6A6D0000 - 0x6A8BB000 	C:\WINDOWS\system32\twinapi.appcore.dll
+0x70B60000 - 0x70D88000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.2506_none_6eb991c088050a06\comctl32.DLL
+0x6E470000 - 0x6E646000 	C:\WINDOWS\System32\dbghelp.dll
+0x5D490000 - 0x5D525000 	C:\WINDOWS\SYSTEM32\TextShaping.dll
+0x76D00000 - 0x76D06000 	C:\WINDOWS\System32\PSAPI.DLL
+
+Heap at VM Abort:
+Heap
+ def new generation   total 2432K, used 0K [0x10030000, 0x102d0000, 0x10510000)
+  eden space 2176K,   0% used [0x10030000, 0x10030000, 0x10250000)
+  from space 256K,   0% used [0x10290000, 0x10290000, 0x102d0000)
+  to   space 256K,   0% used [0x10250000, 0x10250000, 0x10290000)
+ tenured generation   total 32808K, used 32562K [0x10510000, 0x1251a000, 0x14030000)
+   the space 32808K,  99% used [0x10510000, 0x124dcbc0, 0x11251e00, 0x1251a000)
+ compacting perm gen  total 4864K, used 4699K [0x14030000, 0x144f0000, 0x18030000)
+   the space 4864K,  96% used [0x14030000, 0x144c6e40, 0x144c7000, 0x144f0000)
+
+Local Time = Sun Jan 21 15:37:02 2024
+Elapsed Time = 21
+#
+# The exception above was detected in native code outside the VM
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_01-b06 mixed mode)
+#
