@@ -1,5 +1,5 @@
 # Monopoly-With-Java-UI
-This is a 2 player Monopoly Express. game made purely in Java using Java Swing.
+This is a 2 player Monopoly Express. game made purely in Java using Java Swing and Java AWT.
 Adeel Akhani & Mohammad Azim Vahora
 
 To play, just click on "Monopoly.java" and run the code
